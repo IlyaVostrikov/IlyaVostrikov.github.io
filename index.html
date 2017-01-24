@@ -18,7 +18,11 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<!-- Header Backgrounds -->
+	<style>
+		.top-pannel::before { background-image: url(img/top-pannel-bg.jpg) }
+		.preloader          { background-image: url(img/preloader.gif) }
+	</style>
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -108,7 +112,7 @@
 								</div>
 								<div class="top-email hidden-xs"><span><i class="fa fa-envelope" aria-hidden="true"></i> E-Mail:</span> <a href="mailto:uyrdis@mail.ru">uyrdis@mail.ru</a></div>	
 								<div class="top-button">
-									<a href="#small-dialog" class="popup-with-move-anim button button-small" data-form="Верхняя форма">Заказать звонок</a>
+									<a href="#callback" class="popup-with-move-anim button button-small" data-form="Верхняя форма">Заказать звонок</a>
 								</div> 
 							</div>	
 						</div>
@@ -684,7 +688,7 @@
 								</div>
 								<div class="top-email"><span><i class="fa fa-envelope" aria-hidden="true"></i> E-Mail:</span> <a href="mailto:uyrdis@mail.ru">uyrdis@mail.ru</a></div>	
 								<div class="top-button">
-									<a href="#small-dialog" class="popup-with-move-anim button button-small" data-form="Верхняя форма">Заказать звонок</a>
+									<a href="#callback" class="popup-with-move-anim button button-small" data-form="Нижняя форма">Заказать звонок</a>
 								</div> 
 							</div>
 							<div class="developer top-pannel-box clearfix">
@@ -700,7 +704,7 @@
 <div class="hidden">
 	
 	<form>
-	 <div class="popup-form small-dialog zoom-anim-dialog" id="small-dialog">
+	 <div class="popup-form callback small-dialog zoom-anim-dialog" id="callback">
 
 	<input type="hidden" name="project_name" value="Юрдис">
 	<input type="hidden" name="admin_email" value="ilyavostrikov90@gmail.com">
@@ -717,7 +721,7 @@
 			<input type="text" name"Телефон" placeholder="Введите ваш телефон..." required>
 		</label>
 		<div class="text-center">
-		<button class="button">Отправить</button>
+		<button class="button-callback button">Отправить</button>
 		</div>
 		<input class="formname" type="hidden" name="Форма" value="Нижняя форма">
 		</div>
